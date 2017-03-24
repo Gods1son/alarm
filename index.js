@@ -15,9 +15,6 @@ cordova.plugins.notification.local.schedule({
     led: "blue",
     sound: null,
 });
-    alert("reminder set for " + reason.value);
-    document.getElementById("sethour").value = "0";
-    document.getElementById("setminute").value = "0";
-    document.getElementById("setreason").value = "";
+
 
 }
