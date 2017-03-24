@@ -16,7 +16,7 @@
     <preference name="permissions" value="none"/>
     <preference name="KeepRunning" value="false"/>
     <content src="index.html" />
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.1" />
     <gap:config-file platform="android" parent="/manifest/application">
     <activity android:launchMode="singleInstance" />
 </gap:config-file>
