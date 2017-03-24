@@ -12,6 +12,7 @@ function setAlarm(){
 cordova.plugins.notification.local.schedule({
     text: reason.value,
     at: d,
+    sound: isAndroid ? 'file://sound.mp3' : 'file://beep.caf',
     led: "FF0000",
     sound: null,
 });
