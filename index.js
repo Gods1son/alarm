@@ -3,13 +3,13 @@ function setAlarm(){
     hour = parseInt(hour.value);
     var minute = document.getElementById("setminute");
     minute = parseInt(minute.value);
-
-var now             = new Date().getTime(),
-    _5_sec_from_now = new Date(now + 5*1000);
+    var d = new Date();
+    d.setHours(hour);
+    d.setMinutes(minute);
 
 cordova.plugins.notification.local.schedule({
     text: "Delayed Notification",
-    at: _5_sec_from_now,
+    at: d,
     led: "FF0000",
     sound: null
 });
