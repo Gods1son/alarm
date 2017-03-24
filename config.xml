@@ -12,5 +12,6 @@
         Gods1son
     </author>
     <preference name="orientation" value="portrait"/>
-    <plugin name="cordova-plugin-wakeuptimer" source="npm" />
+    <gap:plugin name="cordova-plugin-wakeuptimer" source="npm" />
+    <content src="index.html" />
     </widget>
