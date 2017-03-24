@@ -4,29 +4,13 @@ function setAlarm(){
     var minute = document.getElementById("setminute");
     minute = parseInt(minute.value);
 
-    // set wakeup timer
-window.wakeuptimer.wakeup( successCallback,
-                           errorCallback,
-                           // a list of alarms to set
-                           alarms : [{
-                             type : 'onetime',
-                             time : { hour : hour, minute : minute },
-                             extra : { message : 'json containing app-specific information to be posted when alarm triggers' },
-                    message : 'Alarm has expired!'}]
-                         );
+var now             = new Date().getTime(),
+    _5_sec_from_now = new Date(now + 5*1000);
 
-// example of a callback method
-var successCallback = function(result) {
-  if (result.type==='wakeup') {
-    console.log('wakeup alarm detected--' + result.extra);
-  } else if(result.type==='set'){
-    console.log('wakeup alarm set--' + result);
-  } else {
-    console.log('wakeup unhandled type (' + result.type + ')');
-  }
-};
-
-var errorCallback = function(){
-    alert("error");
-}
+cordova.plugins.notification.local.schedule({
+    text: "Delayed Notification",
+    at: _5_sec_from_now,
+    led: "FF0000",
+    sound: null
+});
 }
