@@ -7,7 +7,7 @@ function setAlarm(){
     var d = new Date();
     d.setHours(hour);
     d.setMinutes(minute);
-    d.setSeconds(0);
+    //d.setSeconds(0);
 
 cordova.plugins.notification.local.schedule({
     text: reason.value,
