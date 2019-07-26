@@ -12,7 +12,10 @@
     <author email="tolulopeibiyode@gmail.com" href="#">
         Gods1son
     </author>
-     <preference name="android-targetSdkVersion" value="28" />
+     <preference name='phonegap-version' value='cli-8.0.0' />
+    <preference name="android-minSdkVersion" value="22" />
+    <preference name="android-targetSdkVersion" value="28" />
+    <preference name="android-compileSdkVersion" value="28" />
     <preference name="orientation" value="portrait"/>
     <preference name="permissions" value="none"/>
     <preference name="KeepRunning" value="false"/>
