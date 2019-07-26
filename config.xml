@@ -18,6 +18,7 @@
     <content src="index.html" />
     <plugin spec="https://github.com/katzer/cordova-plugin-local-notifications" />
     <plugin name="cordova-plugin-media" />
+    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
     <gap:config-file platform="android" parent="/manifest/application">
     <activity android:launchMode="singleInstance" />
 </gap:config-file>
